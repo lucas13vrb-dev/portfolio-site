@@ -2,35 +2,91 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Portfólio Power BI - Lucas De Araújo Silvério| Analista de Dados </title>
+  <title>Portfólio Power BI - Lucas Araújo Silvério | Analista de Logística & Dados</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #1e1e1e;
+      background: linear-gradient(135deg, #0078D4, #005A9E);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #1e1e1e;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .container {
-      padding: 30px;
-      max-width: 900px;
+      padding: 40px 20px;
+      max-width: 1000px;
       margin: auto;
     }
+
     .projeto {
       background-color: white;
       padding: 20px;
       margin-bottom: 20px;
       border-left: 5px solid #0078D4;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
+    .projeto h2 {
+      margin-top: 0;
+    }
+
     a {
       color: #0078D4;
       text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #0078D4;
+      margin: 0 10px;
     }
   </style>
 </head>
@@ -38,24 +94,49 @@
 
 <header>
   <h1>Portfólio Power BI</h1>
-  <p>por Seu Nome</p>
+  <p>Lucas Araújo Silvério | Analista de Logística & Dados</p>
 </header>
 
-<div class="container">
+<nav>
+  <a href="#projetos">Projetos</a>
+  <a href="https://github.com/lucassilverio-debug" target="_blank">GitHub</a>
+  <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank">LinkedIn</a>
+  <a href="mailto:seuemail@exemplo.com">Contato</a>
+</nav>
+
+<div class="container" id="projetos">
   <div class="projeto">
     <h2>📊 Vendas por Região</h2>
-    <p>Relatório interativo de vendas segmentado por região, canal de venda e período.</p>
+    <p>Dashboard interativo de vendas segmentado por região, canal de venda e período. Criado em Power BI com integração de dados SAP.</p>
+    <a href="https://app.powerbi.com/view?r=SEU-LINK-AQUI" target="_blank">🔗 Ver Relatório</a>
+  </div>
+
+  <div class="projeto">
+    <h2>🚚 Logística & Operações</h2>
+    <p>Análise de paletes, transporte e performance operacional com KPIs de OTIF e retenção de paletes. Automação integrada ao SAP e SQL Server.</p>
     <a href="https://app.powerbi.com/view?r=SEU-LINK-AQUI" target="_blank">🔗 Ver Relatório</a>
   </div>
 
   <div class="projeto">
     <h2>📈 Dashboard Financeiro</h2>
-    <p>Relatório financeiro com análise de receita, despesas e lucro.</p>
+    <p>Relatório financeiro com análise de receita, despesas e margem de contribuição. Visualizações estratégicas para tomada de decisão.</p>
     <a href="https://app.powerbi.com/view?r=SEU-LINK-AQUI" target="_blank">🔗 Ver Relatório</a>
   </div>
 
-  <!-- Adicione mais projetos aqui -->
+  <div class="projeto">
+    <h2>🤖 Automação com Python</h2>
+    <p>Scripts em Python para automatizar relatórios logísticos, manipular dados em Excel e integrar informações de diferentes fontes.</p>
+    <a href="https://github.com/lucassilverio-debug" target="_blank">🔗 Ver Código</a>
+  </div>
 </div>
+
+<footer>
+  <p>© 2025 - Lucas Araújo Silvério | Portfólio Power BI</p>
+  <p>
+    <a href="https://github.com/lucassilverio-debug" target="_blank">GitHub</a> | 
+    <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank">LinkedIn</a>
+  </p>
+</footer>
 
 </body>
 </html>
