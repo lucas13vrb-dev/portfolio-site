@@ -5,24 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Lucas Araújo Silvério | Analista de Logística & Dados</title>
   <style>
+    /* ====== RESET ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       background-color: #f5f7fa;
-      margin: 0;
-      padding: 0;
       color: #333;
+      line-height: 1.6;
     }
 
+    /* ====== HEADER ====== */
     header {
       background: linear-gradient(135deg, #0078D4, #005A9E);
       color: white;
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
     }
 
     header p {
@@ -30,8 +37,9 @@
       opacity: 0.9;
     }
 
+    /* ====== NAV ====== */
     nav {
-      background: #1e1e1e;
+      background-color: #1e1e1e;
       padding: 15px;
       text-align: center;
       position: sticky;
@@ -41,72 +49,106 @@
 
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
       color: #0078D4;
     }
 
+    /* ====== CONTAINER ====== */
     .container {
+      padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
-      padding: 40px 20px;
     }
 
     .titulo-secao {
       text-align: center;
+      margin-bottom: 40px;
       font-size: 2rem;
       color: #005A9E;
-      margin-bottom: 40px;
+    }
+
+    /* ====== PROJETOS ====== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
 
     .projeto {
-      background: white;
+      background-color: white;
+      padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      margin-bottom: 40px;
-      overflow: hidden;
-      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .projeto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
     .projeto h2 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
       color: #0078D4;
-      margin-top: 0;
     }
 
     .projeto p {
       margin-bottom: 15px;
+      font-size: 0.95rem;
     }
 
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      border-radius: 8px;
+    .projeto a {
+      display: inline-block;
+      background: #0078D4;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
     }
 
+    .projeto a:hover {
+      background: #005A9E;
+    }
+
+    /* ====== FOOTER ====== */
     footer {
-      background: #1e1e1e;
+      background-color: #1e1e1e;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 25px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
     }
 
     footer a {
       color: #0078D4;
       margin: 0 10px;
       text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #00aaff;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Portfólio Power BI</h1>
+  <h1>Portfólio</h1>
   <p>Lucas Araújo Silvério | Analista de Logística & Dados</p>
 </header>
 
@@ -114,52 +156,53 @@
   <a href="#projetos">Projetos</a>
   <a href="https://github.com/lucas13vrb-dev" target="_blank">GitHub</a>
   <a href="https://www.linkedin.com/in/lucas-de-araújo-silvério-167108263" target="_blank">LinkedIn</a>
-  <a href="mailto:seuemail@exemplo.com">Contato</a>
+  <a href="mailto:lucas13.vrb@gmail.com">Contato</a>
 </nav>
 
 <div class="container" id="projetos">
-  <h2 class="titulo-secao">📊 Meus Dashboards</h2>
-
-  <div class="projeto">
-    <h2>✈️ Frota de Aeronaves Civis Brasileiras</h2>
+  <h2 class="titulo-secao">🚀 Projetos em Destaque</h2>
+  
+  <div class="grid">
+    <div class="projeto">
+      <h2>✈️ Frota de Aeronaves Civis Brasileiras</h2>
       <p>Dashboard interativo da frota de aviões brasileira com seus tipos de motores e regiões que estão no mundo.</p>
-      <a href="https://app.powerbi.com/reportEmbed?reportId=b425c2c6-f619-42b2-bf98-67f7a5155320&autoAuth=true&ctid=da49a844-e2e3-40af-86a6-c3819d704f49"></iframe>
-  </div>
+      <a href="https://app.powerbi.com/reportEmbed?reportId=b425c2c6-f619-42b2-bf98-67f7a5155320&autoAuth=true&ctid=da49a844-e2e3-40af-86a6-c3819d704f49" target="_blank">🔗 Ver Relatório</a>
+    </div>
 
-  <div class="projeto">
-   <h2>💰 Faturamento por Gerentes</h2>
+    <div class="projeto">
+      <h2>💰 Faturamento por Gerentes</h2>
       <p>Dashboard interativo de faturamento por Gerentes com filtros dinâmicos do treinamento do Professor Jefferson Alves.</p>
-      <a href="https://app.powerbi.com/reportEmbed?reportId=781a33e7-864c-475d-a7d4-1c972871465a&autoAuth=true&ctid=da49a844-e2e3-40af-86a6-c3819d704f49"></iframe>
-  </div>
+      <a href="https://app.powerbi.com/reportEmbed?reportId=781a33e7-864c-475d-a7d4-1c972871465a&autoAuth=true&ctid=da49a844-e2e3-40af-86a6-c3819d704f49" target="_blank">🔗 Ver Relatório</a>
+    </div>
 
-<div class="projeto">
+    <div class="projeto">
       <h2>📊 Relatórios de Gráficos de Vendas Dinâmicos com Imagens</h2>
       <p>Dashboard interativo de faturamento por vendedores com fotos e filtros dinâmicos dos visuais nativos do treinamento do Professor Jefferson Alves.</p>
-      <a href="https://app.powerbi.com/reportEmbed?reportId=bef5edf2-151b-46b5-b127-387e34be48e6&autoAuth=true&ctid=da49a844-e2e3-40af-86a6-c3819d704f49" allowFullScreen="true"></iframe>
+      <a href="https://app.powerbi.com/reportEmbed?reportId=bef5edf2-151b-46b5-b127-387e34be48e6&autoAuth=true&ctid=da49a844-e2e3-40af-86a6-c3819d704f49" target="_blank">🔗 Ver Relatório</a>
+    </div>
 
-
-  <div class="projeto">
-    <h2>📈 Dashboard Financeiro</h2>
-    <p>Relatório financeiro com análise de receita, despesas e margem de contribuição. </p>
-    <iframe src="https://app.powerbi.com/links/JL6axnmQ2V?ctid=da49a844-e2e3-40af-86a6-c3819d704f49&pbi_source=linkShare" allowFullScreen="true"></iframe>
-  </div>
-
-<div class="projeto">
+    <div class="projeto">
       <h2>🚚 Logística & Operações</h2>
       <p>Análise de paletes, transporte e performance operacional com KPIs de OTIF e retenção de paletes. Automação integrada ao SAP e SQL Server.</p>
-      <a href="https://app.powerbi.com/view?r=SEU-LINK-AQUI" allowFullScreen="true"></iframe>
+      <a href="https://app.powerbi.com/view?r=SEU-LINK-AQUI" target="_blank">🔗 Ver Relatório</a>
     </div>
-<div class="projeto">
+
+    <div class="projeto">
+      <h2>📈 Dashboard Financeiro</h2>
+      <p>Relatório financeiro com análise de receita, despesas e margem de contribuição. Visualizações estratégicas para tomada de decisão.</p>
+      <a href="https://app.powerbi.com/links/JL6axnmQ2V?ctid=da49a844-e2e3-40af-86a6-c3819d704f49&pbi_source=linkShare" target="_blank">🔗 Ver Relatório</a>
+    </div>
+
+    <div class="projeto">
       <h2>🤖 Automação com Python</h2>
       <p>Scripts em Python para automatizar relatórios logísticos, manipular dados em Excel e integrar informações de diferentes fontes.</p>
-      <a href="https://github.com/lucas13vrb-dev"allowFullScreen="true"></iframe>
+      <a href="https://github.com/lucas13vrb-dev" target="_blank">🔗 Ver Código</a>
     </div>
   </div>
 </div>
 
-
 <footer>
-  <p>© 2025 - Lucas Araújo Silvério | </p>
+  <p>© 2025 - Lucas Araújo Silvério | Portfólio</p>
   <p>
     <a href="https://github.com/lucas13vrb-dev" target="_blank">GitHub</a> | 
     <a href="https://www.linkedin.com/in/lucas-de-araújo-silvério-167108263" target="_blank">LinkedIn</a>
